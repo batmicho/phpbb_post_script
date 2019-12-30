@@ -68,14 +68,14 @@ function post_report {
 }
 
 if [[ $1 == "--help" || $1 == '-h' ]]; then
-  cat <<EOF 
-  PHPBB forum posting script. 
-  
+  cat <<EOF
+  PHPBB forum posting script.
+
   Usage: $0 [options]
 
-  Open the script with a text editor and set your user and pass for both login sections http and forum, 
-    set your name in 'my_name' and the base URL of the forum in 'base_url'. Set the path to the file(file_path) which is the content you will post.
-  
+  Open the script with a text editor and set your user and pass for both login section http and forum,
+    set your name in 'my_name' and the base URL of the forum in 'base_url'. Set the path to the file(file_path) of which content you will post.
+
   Once configured with login details, file location and TL only run $0
 
  --list-tl
@@ -83,7 +83,6 @@ if [[ $1 == "--help" || $1 == '-h' ]]; then
                                                                                                      Example: my_tl=7 .
 
  The script automatically sets the name and the current date in d/m/y format as a subject.
-                                                                                                    M.D.
 EOF
 exit 1
 fi
